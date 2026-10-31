@@ -1,4 +1,4 @@
-# Custom Genes Background Framework
+# Custom Genes Background Framework（需要Harmony）
 
 给 RimWorld 1.6/1.7 的基因界面提供自定义背景图的通用框架。
 
