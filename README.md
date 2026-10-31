@@ -25,7 +25,7 @@
 
 ```xml
 <li Class="GeneBackgroundFramework.GeneBackgroundExtension">
-  <backgroundPath>UI/Gene/CommonBackground</backgroundPath><!--原版-->
+  <backgroundPath>UI/Gene/CommonBackground</backgroundPath>
   <backgroundPathXenogenes>UI/Gene/XenogeneBackground</backgroundPathXenogenes><!--异种基因-->
   <backgroundPathEndogenes>UI/Gene/EndogeneBackground</backgroundPathEndogenes><!--谱系基因-->
   <backgroundPathArchite>UI/Gene/ArchiteBackground</backgroundPathArchite><!--超凡基因-->
