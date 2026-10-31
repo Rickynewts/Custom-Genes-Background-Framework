@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Custom Genes Background Framework</name>
+  <author>Yushiren</author>
+  <packageId>Yushiren.CustomGenesBackgroundFramework</packageId>
+  <description>自定义基因背景框架，和VEF兼容。</description>
+<!--前置-->
+<modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Biotech</packageId>
+      <displayName>RimWorld - Biotech</displayName>
+    </li>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <!--排序-->
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld.Biotech</li>
+  </loadAfter>
+  <supportedVersions>
+   <li>1.6</li>
+   <li>1.7</li>
+  </supportedVersions>
+</ModMetaData>
