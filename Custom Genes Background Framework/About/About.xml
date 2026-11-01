@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Custom Genes Background Framework</name>
+  <name>[Y]Custom Genes Background Framework</name>
   <author>Yushiren</author>
   <packageId>Yushiren.CustomGenesBackgroundFramework</packageId>
-  <description>自定义基因背景框架，和VEF兼容。</description>
+  <description>RimWorld 1.6/1.7 的基因界面提供自定义背景图的通用框架。
+▸给开发者：
+↳需要Harmony
+↳本框架允许在Genedef XML中添加modExtensions字段来修改基因的背景。
+↳与VEF的基因背景补丁兼容，可同时使用。
+▸详细：https://github.com/Rickynewts/Genes-Engineering-Custom-Genes-Exporter-Tool
+</description>
 <!--前置-->
 <modDependencies>
     <li>
