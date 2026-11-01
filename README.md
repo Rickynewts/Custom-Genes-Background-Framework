@@ -1,10 +1,10 @@
-# Custom Genes Background Framework（需要Harmony）
+# Custom Genes Background Framework
 
 给 RimWorld 1.6/1.7 的基因界面提供自定义背景图的通用框架。
 
-- 需要：Harmony、Biotech
-- 不会默认修改任何基因；只有带 `GeneBackgroundExtension` 的 GeneDef 才会被接管
-- 与 Vanilla Expanded Framework（VEF）的基因背景补丁兼容，可同时使用
+- 需要Harmony
+- 本框架允许在Genedef XML中添加modExtensions字段来修改基因的背景。
+- 与VEF的基因背景补丁兼容，可同时使用。
 
 ## 用法
 
@@ -21,7 +21,7 @@
   </modExtensions>
 </GeneDef>
 ```
-### 按基因类型（原版）分开指定
+### 按基因类型分开指定
 
 ```xml
 <li Class="GeneBackgroundFramework.GeneBackgroundExtension">
@@ -34,23 +34,23 @@
 
 优先级：`backgroundPathArchite`（biostatArc > 0 时）> `backgroundPathXenogenes` / `backgroundPathEndogenes` > `backgroundPath`。
 
-### 关闭某个基因
+### 关闭某个基因背景
 
-不写扩展，或写：
+不写扩展，或：
 
 ```xml
 <li Class="GeneBackgroundFramework.GeneBackgroundExtension">
-  <useCustomBackground>false</useCustomBackground>
+  <useCustomBackground>false</useCustomBackground><!--关闭自定义背景-->
 </li>
 ```
 
-## 用 Patch 给其它 mod 的基因加背景用法
+## 用Patch用法
 
 ```xml
 <Patch>
   <Operation Class="PatchOperationAddModExtension">
     <success>Always</success>
-    <xpath>Defs/GeneDef[defName="SomeGene"]</xpath>
+    <xpath>Defs/GeneDef[defName="SomeGene"]</xpath><!--补丁-->
     <value>
       <li Class="GeneBackgroundFramework.GeneBackgroundExtension">
         <backgroundPath>UI/Gene/MyGeneBackground</backgroundPath>
@@ -59,9 +59,3 @@
   </Operation>
 </Patch>
 ```
-
-## 排查
-
-log里搜 `GeneBackgroundFramework`：
-
-- `基因背景补丁已插入 3 处`：补丁已生效；
