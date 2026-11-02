@@ -34,7 +34,7 @@
 
 优先级：`backgroundPathArchite`（biostatArc > 0 时）> `backgroundPathXenogenes` / `backgroundPathEndogenes` > `backgroundPath`。
 
-### 关闭某个基因背景
+### 关闭某个基因自定义背景
 
 不写扩展，或：
 
@@ -44,7 +44,7 @@
 </li>
 ```
 
-## 用Patch用法
+## Patch用法
 
 ```xml
 <Patch>
